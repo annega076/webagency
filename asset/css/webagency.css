@@ -60,33 +60,30 @@ header {
     width: 85%;
     height: auto;
     display:block;
-    margin: 20px auto;
-    justify-content: center;
-    margin:40px auto;
+    margin: 60px auto;
 }
 .imagetextpage1 {
-    position: relative;
     display:flex;
-    
-}   
+    margin-bottom: 3rem;
+    position: relative;
+}
+
 .textpage1 {
-    position:absolute;
-    bottom: 10%;
+    position: absolute;
     top:50%;
-    left:37%;
-    right: auto;
+    left: 10%;  
     width: 45%;
-    transform: translate(-60%, -40%);
+    transform: translateY(-50%);
     color: aqua;
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .textpage1bis {
-    position:absolute;
+    position: absolute;
     bottom: 30%;
-    left:31%;
+    left:10%;
     right: auto;
-    transform: translate(-60%, -40%);
+    transform: translateY(-60%);
     color: rgb(224, 224, 236);
     font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -123,55 +120,103 @@ header {
 
 #services {
     display: flex;
+    flex-wrap: wrap;
+    max-width:1400px;
+    margin:0 auto;
+    align-items: center
+    ;
+}
+
+#services .descriptionservices-container{
+    flex:0 0 100%;
+    min-width: 300px;
 }
 
 .title {
-    width: 100%;
+    flex:0 0 100%;
+    text-align: center;
+    margin-bottom :40px;
     display: flex;
     flex-direction: column;
 }
 .image{
-    width:50%;
-}
-.descriptionservices-container {
-    width:50%;
-    display: flex;
-    flex-direction: column;
+    flex:0 0 50%;
+    display:flex;
+    justify-content: center;
 }
 
-.descriptionservices {
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+.descriptionservices-container {
+
+    flex:0 0 50%;
     display: flex;
+    flex-direction: column;
+    justify-content: center
+    
+    
+
+}
+
+.description-services {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+ 
+    
 }
 .text-icon {
     display: flex;
     flex-direction: column;
 }
-.icon{
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 60px;
-    height:60px;
+    height: 60px;
     position: relative;
     border-radius: 50%;
     border: 1px solid #d6d6d6;
-    -webkit-animation:spin 5s linear infinite ;
+    flex: shrink 0;
+    margin-right:20px;
+      
+}
+
+.icon > i{
+    color:#70abcf;
+    
+}
+
+.icon i:first-child {
+    color: #70abcf;
+    font-size: 20px;
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin:0;
+
+       
+}
+
+.dot {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
     animation: spin 5s linear infinite;
 }
-
-.icon i{
-    color: #70abcf;
-    position :absolute;
-    top: 27px;
-    right: 19px;0px;
-    -webkit-transform:translateY(-50%);
-    transform:translateY(-50%);
-}
-
-
 .dot i{
-    position: absolute;
-    top: 10px;
-    right: 0;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    position:absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    
 }
 @keyframes spin {
     100% {
