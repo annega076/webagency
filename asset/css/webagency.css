@@ -123,13 +123,17 @@ header {
     flex-wrap: wrap;
     max-width:1400px;
     margin:0 auto;
-    align-items: center
-    ;
-}
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    }
 
 #services .descriptionservices-container{
     flex:0 0 100%;
     min-width: 300px;
+    margin: 30px 0 30px 0;
+
 }
 
 .title {
@@ -155,6 +159,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center
+    margin-bottom: 3rem;
     
     
 
@@ -223,4 +228,42 @@ header {
         -webkit-transform:rotate(360deg) ;
         transform: rotate(360deg);
     }
+}
+#projets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+#projets .title {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.menuprojets {
+    background-color: rgb(201, 197, 197);
+    margin-top: 2rem;
+    padding: 15px 5px 15px 5px;
+    border-radius: 10px;;
+
+}
+.menuprojets ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color:#fff;
+    gap: 30px;
+    margin: 0;   
+}
+ 
+.images-container {
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 3rem;
+   
+}
+.images-container img{
+    width: 33%;
+    padding: 10 20 10 20;
 }
